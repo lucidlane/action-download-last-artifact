@@ -1,0 +1,6 @@
+---
+name: action-download-last-artifact
+description: Downloads the last created artifact by name, regardless of which workflow or branch it was created in
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

@@ -1,0 +1,33 @@
+{
+  "name": "action-download-last-artifact",
+  "version": "0.0.0",
+  "description": "Download last artifact action",
+  "main": "dist/index.js",
+  "scripts": {
+    "dist": "$(npm bin)/ncc build index.js -m --license licenses.txt",
+    "lint": "$(npm bin)/eslint .",
+    "test": "$(npm bin)/jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levonet/action-download-last-artifact.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions"
+  ],
+  "author": "Pavlo Bashynskyi (levonet)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/levonet/action-download-last-artifact/issues"
+  },
+  "homepage": "https://github.com/levonet/action-download-last-artifact#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0",
+    "eslint": "^7.21.0",
+    "jest": "^26.6.3"
+  }
+}
